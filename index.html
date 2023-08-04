@@ -81,8 +81,265 @@
 
         <!-- Reset Css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Open+Sans:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+
         <!-- Style Css -->
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
-    <body></body>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <!-- Logo -->
+                    <img
+                        src="./assets/image/Logo.svg"
+                        alt="CeloBank"
+                        class="logo"
+                    />
+
+                    <!-- Navbar  -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Home</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Products</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Features</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Header action -->
+                    <div class="header-action">
+                        <a href="#!" class="header-action__link">Log in</a>
+                        <a href="#!" class="btn header-action__btn">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <!-- Hero content -->
+                    <section class="hero__content">
+                        <span class="subject">Digital Smart Wallet</span>
+                        <h1 class="hero__heading">
+                            Digital <strong>Payment</strong> For Everyone.
+                        </h1>
+                        <p class="hero__desc">
+                            We bring together eveything that’s required to build
+                            websites and apps that accept payments and send
+                            payouts globally. We are the best platform.
+                        </p>
+                        <form action="" class="email-form">
+                            <input
+                                type="email"
+                                class="email-form__input"
+                                placeholder="Your email address"
+                            />
+                            <button type="submit" class="btn email__button">
+                                Get Started
+                            </button>
+                        </form>
+                        <span class="commit"
+                            >*We’ll respect the inbox and never share your
+                            email.
+                        </span>
+                    </section>
+
+                    <!-- Hero advertising -->
+                    <div class="hero__advertising">
+                        <div class="hero__mobile">
+                            <div class="rectangle"></div>
+                            <div class="master__card">
+                                <div class="master__card-header">
+                                    <span class="balance"> Main Balance </span>
+                                    <img
+                                        src="./assets/image/master-card-logo.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <span class="account-balance">
+                                    $78,355.17
+                                </span>
+                                <div class="master__card-text">
+                                    <span>VALID THUR</span>
+                                    <span>CARD HOLDER</span>
+                                </div>
+                                <div class="master__card-info">
+                                    <span class="exp-date">08/22</span>
+                                    <span class="name-holder">
+                                        Pham Quoc Cong
+                                    </span>
+                                </div>
+                                <img
+                                    src="./assets/image/icon/master-card-decor-01.svg"
+                                    alt=""
+                                    class="master__card-decor1"
+                                />
+                                <img
+                                    src="./assets/image/icon/master-card-decor-02.svg"
+                                    alt=""
+                                    class="master__card-decor2"
+                                />
+                            </div>
+                            <div class="mobile__transaction">
+                                <div class="transections">
+                                    <span>Transections</span>
+                                    <img
+                                        src="./assets/image/icon/mobile-menu.svg"
+                                        alt="mobile menu"
+                                    />
+                                </div>
+                                <ul class="feature-mobile__list">
+                                    <!-- feature-mobile item 1 -->
+                                    <div class="feature-mobile__item">
+                                        <div class="feature-mobile__icon">
+                                            <img
+                                                src="./assets/image/icon/received-money.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="feature-mobile__info">
+                                            <div class="feature-mobile__name">
+                                                Received Money
+                                            </div>
+                                            <div
+                                                class="feature-mobile__describe"
+                                            >
+                                                email@gmail.com
+                                            </div>
+                                        </div>
+                                        <div class="feature-mobile__detail">
+                                            <div class="feature-mobile__money">
+                                                +$1,600
+                                            </div>
+                                            <div class="feature-mobile__date">
+                                                Sep 23
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- feature-mobile item 2 -->
+                                    <div class="feature-mobile__item">
+                                        <div class="feature-mobile__icon">
+                                            <img
+                                                src="./assets/image/icon/send-money.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="feature-mobile__info">
+                                            <div class="feature-mobile__name">
+                                                Send Money
+                                            </div>
+                                            <div
+                                                class="feature-mobile__describe"
+                                            >
+                                                Airbnb Payment
+                                            </div>
+                                        </div>
+                                        <div class="feature-mobile__detail">
+                                            <div class="feature-mobile__money">
+                                                - $600
+                                            </div>
+                                            <div class="feature-mobile__date">
+                                                Sep 23
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- feature-mobile item 3 -->
+                                    <div class="feature-mobile__item">
+                                        <div class="feature-mobile__icon">
+                                            <img
+                                                src="./assets/image/icon/received-money-02.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="feature-mobile__info">
+                                            <div class="feature-mobile__name">
+                                                Received Money
+                                            </div>
+                                            <div
+                                                class="feature-mobile__describe"
+                                            >
+                                                Upwork Earning
+                                            </div>
+                                        </div>
+                                        <div class="feature-mobile__detail">
+                                            <div class="feature-mobile__money">
+                                                +$1,600
+                                            </div>
+                                            <div class="feature-mobile__date">
+                                                Sep 23
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- feature-mobile item 4 -->
+                                    <div class="feature-mobile__item">
+                                        <div class="feature-mobile__icon">
+                                            <img
+                                                src="./assets/image/icon/pay-bill.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="feature-mobile__info">
+                                            <div class="feature-mobile__name">
+                                                Pay Bill
+                                            </div>
+                                            <div
+                                                class="feature-mobile__describe"
+                                            >
+                                                Electricity Bill
+                                            </div>
+                                        </div>
+                                        <div class="feature-mobile__detail">
+                                            <div class="feature-mobile__money">
+                                                - $600
+                                            </div>
+                                            <div class="feature-mobile__date">
+                                                Sep 23
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hero__deposite"></div>
+                        <div class="hero__interest"></div>
+                        <div class="hero__fund"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main style="height: 10000px">
+            <!-- How it work -->
+            <section class="working">
+                <div class="container">
+                    <div class="working__inner">
+                        <div class="working__image"></div>
+                        <section class="working__info">
+                            <span class="subject">Digital Smart Wallet</span>
+                            <h2 class="section__heading">How It Works</h2>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>

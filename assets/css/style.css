@@ -1,0 +1,412 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #fff;
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Common */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sora", sans-serif;
+}
+
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 58px;
+    height: var(--height);
+    min-width: 149px;
+    display: inline-flex;
+    align-self: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: var(--height);
+    border-radius: 99px;
+    background: red;
+}
+
+.section__heading {
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.subject {
+    position: relative;
+    color: #696d77;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    padding-left: 30px;
+}
+
+.subject::before {
+    position: absolute;
+    content: "  ";
+    background: #696d77;
+    width: 18px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+/* Header */
+.header {
+    padding: 42px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    margin-left: 70px;
+}
+
+.navbar .navbar__list {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__list .navbar__link {
+    position: relative;
+    color: #696d76;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    padding: 6px 0;
+    margin: 0 24px;
+    transition: 0.25s;
+}
+
+.navbar__list .navbar__link::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    background: #7264d6;
+    bottom: 0;
+    left: 0;
+    transition: 0.25s;
+}
+
+.navbar__list .navbar__link:hover:after {
+    width: 100%;
+}
+
+.navbar__list .navbar__link:hover {
+    color: #212832;
+}
+
+.header-action {
+    margin-left: auto;
+}
+
+.header-action__link {
+    color: #212832;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    margin-right: 28px;
+}
+
+.header-action__btn {
+    min-width: 113px;
+    --height: 52px;
+    border-radius: 6px;
+    background: #212832;
+}
+
+/* Hero */
+.hero {
+    margin-top: 34px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero__content {
+    width: 46%;
+}
+
+.hero__content .hero__heading {
+    width: 500px;
+    color: #212832;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.17;
+    margin-top: 12px;
+}
+
+.hero__content .hero__heading strong {
+    color: #7264d6;
+}
+
+.hero__content .hero__desc {
+    width: 540px;
+    color: #696d76;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    margin-top: 20px;
+}
+
+.hero__content .email-form {
+    position: relative;
+    width: 540px;
+    height: 74px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px;
+    margin-top: 40px;
+}
+
+.hero__content .email-form input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+
+    font-size: 1.6rem;
+}
+
+.hero__content .email-form input::placeholder {
+    color: #696d77;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.hero__content .email__button {
+    position: absolute;
+    border-radius: 8px;
+    background: #7264d6;
+    border: none;
+    outline: none;
+    right: 8px;
+}
+
+.hero__content .commit {
+    display: block;
+    color: #696d76;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71;
+    margin-top: 20px;
+}
+
+.hero__advertising {
+    margin-left: 168px;
+}
+
+.hero__advertising .hero__mobile {
+    position: relative;
+    width: 296px;
+    height: 562px;
+    border-radius: 40px;
+    border: 12px solid #212832;
+    background: #fff;
+    padding: 11px;
+}
+
+.hero__mobile .rectangle {
+    position: absolute;
+    width: 144px;
+    height: 36px;
+    border-radius: 0px 0px 18px 18px;
+    background: #3c2f60;
+    top: -12px;
+    left: 64px;
+}
+
+/* .hero__mobile .mobile__case {
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.hero__mobile .master__card {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    background: linear-gradient(56deg, #8679e4 0%, #7264d6 100%);
+    margin-top: 29px;
+    padding: 16px;
+    z-index: 1;
+}
+
+.master__card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.master__card-header .balance {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.master__card .account-balance {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+.master__card-text {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.master__card-text span {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.master__card-text span:nth-child(2) {
+    margin-left: 12px;
+}
+
+.master__card-info {
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.master__card-info span {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 11px;
+}
+
+.master__card-info .name-holder {
+    margin-left: 36px;
+}
+
+.master__card .master__card-decor1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.master__card .master__card-decor2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.hero__mobile .mobile__transaction {
+    margin-top: 24px;
+}
+
+.mobile__transaction .transections {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile__transaction .feature-mobile__list {
+    margin-top: 28px;
+}
+
+.feature-mobile__list .feature-mobile__item {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.feature-mobile__list .feature-mobile__info {
+    margin-left: 14px;
+}
+
+.feature-mobile__info .feature-mobile__name {
+    color: #212832;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.feature-mobile__info .feature-mobile__describe {
+    color: #696d76;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 3px;
+}
+
+.feature-mobile__list .feature-mobile__detail {
+    margin-left: auto;
+    text-align: right;
+}
+
+.feature-mobile__detail .feature-mobile__money {
+    color: #212832;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.feature-mobile__detail .feature-mobile__date {
+    color: #696d76;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 3px;
+}
