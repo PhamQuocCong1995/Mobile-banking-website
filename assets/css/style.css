@@ -56,7 +56,7 @@ a {
     font-weight: 600;
     line-height: var(--height);
     border-radius: 99px;
-    background: red;
+    background: #212832;
 }
 
 .section__heading {
@@ -64,6 +64,15 @@ a {
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.25;
+    margin-top: 12px;
+}
+
+.section__desc {
+    color: #696d76;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    margin-top: 20px;
 }
 
 .subject {
@@ -153,7 +162,6 @@ a {
     min-width: 113px;
     --height: 52px;
     border-radius: 6px;
-    background: #212832;
 }
 
 /* Hero */
@@ -243,6 +251,7 @@ a {
 }
 
 .hero__advertising {
+    position: relative;
     margin-left: 168px;
 }
 
@@ -266,14 +275,7 @@ a {
     left: 64px;
 }
 
-/* .hero__mobile .mobile__case {
-    padding: 23px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-.hero__mobile .master__card {
+.master__card {
     position: relative;
     width: 250px;
     height: 150px;
@@ -304,7 +306,7 @@ a {
 }
 
 .master__card-text {
-    margin-top: 32px;
+    margin-top: 39px;
     display: flex;
     align-items: center;
 }
@@ -409,4 +411,283 @@ a {
     font-weight: 400;
     line-height: 1;
     margin-top: 3px;
+}
+
+.hero__deposite {
+    position: absolute;
+    width: 174px;
+    height: 46px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 113px;
+    left: -101px;
+    z-index: 1;
+}
+
+.hero__deposite .deposite__name {
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero__deposite .deposite__money {
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-left: 19px;
+}
+
+.hero__interest {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background-color: #da6464;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    top: 127px;
+    right: -174px;
+    z-index: 1;
+}
+
+.hero__interest .interest__percent {
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.hero__interest span:nth-child(2) {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.hero__fund {
+    position: absolute;
+    width: 124px;
+    height: 68px;
+    border-radius: 10px;
+    background: #439f90;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+    bottom: 61px;
+    right: -74px;
+}
+
+.fund__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.fund__info span:nth-child(1) {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.fund__info span:nth-child(2) {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 3px;
+}
+
+/* Working */
+.working {
+    margin-top: 160px;
+}
+
+.working__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 230px;
+}
+
+.working__image {
+    position: relative;
+    width: 40%;
+}
+
+.working__image .working__img {
+    display: block;
+    width: 456px;
+    height: 619px;
+    object-fit: cover;
+    margin-left: 7px;
+}
+
+.working__image .working__background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.working__image .message {
+    position: absolute;
+    width: 226px;
+    height: 70px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    bottom: 96px;
+    right: -107px;
+}
+
+.working__image .message .message-text {
+    margin-left: 10px;
+}
+
+.message-text div:nth-child(1) {
+    color: #212832;
+    font-family: Inter, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.message-text div:nth-child(2) {
+    color: #696d76;
+    font-size: 1.2rem;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    margin-top: 7px;
+}
+
+.working__image .working__card {
+    position: absolute;
+    top: 76px;
+    right: 62px;
+}
+
+.working .working__info {
+    margin-top: 29px;
+}
+
+.working__info .working__info-detail {
+    margin-top: 70px;
+}
+
+.working__info-detail .detail {
+    margin-top: 30px;
+}
+
+.working__info-detail .detail .title {
+    width: 470px;
+    color: #212832;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.working__info-detail .detail .sub-title {
+    width: 470px;
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    margin-top: 16px;
+}
+
+/* Feature */
+.feature {
+    margin-top: 160px;
+}
+
+.feature__inner {
+    display: flex;
+    align-items: center;
+}
+
+.feature__content {
+    width: 40%;
+}
+
+.feature__content ul {
+    margin-top: 28px;
+}
+
+.feature__content ul .feature__salient {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.feature__content ul .feature__salient:first-child {
+    margin-top: 0;
+}
+
+.feature__salient .dot {
+    width: 12px;
+    height: 12px;
+    background: #7264d6;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.feature__salient .feature__salient-text {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.feature__content .feature__btn {
+    margin-top: 38px;
+    border-radius: 8px;
+}
+
+.feature__ads {
+    margin-left: 130px;
+}
+
+.feature__ads .feature__card {
+    width: 482px;
+    height: 322px;
+    margin-top: 0;
+    padding: 38px;
+}
+
+.feature__card .balance--big {
+    font-size: 2.4rem;
+}
+
+.feature__card .account-balance--big {
+    font-size: 3.2rem;
+    margin-top: 10px;
+}
+
+.feature__card .feature__card-text {
+    margin-top: 98px;
+}
+
+.feature__card .feature__card-text span:nth-child(1) {
+    font-size: 2rem;
+}
+
+.feature__card .feature__card-text span:nth-child(2) {
+    font-size: 2rem;
+    margin-left: 26px;
+}
+
+.feature__card-info span {
+    font-size: 2.2rem;
+}
+
+.feature__card-info span:nth-child(2) {
+    margin-left: 81px;
 }
