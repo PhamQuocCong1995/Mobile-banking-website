@@ -1118,3 +1118,130 @@ a {
     bottom: 49px;
     right: 166px;
 }
+
+/* Footer */
+.footer {
+    margin-top: 100px;
+}
+
+.footer__inner {
+    padding-top: 100px;
+}
+
+.footer__inner .footer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__column .footer__heading {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.37;
+}
+
+.footer__column .footer__list {
+    margin-top: 24px;
+}
+
+.footer__list .footer__link {
+    display: block;
+    color: #6a6e78;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    opacity: 0.75;
+}
+
+.footer__list li {
+    margin-top: 12px;
+}
+
+.footer__list li:first-child {
+    margin-top: 0;
+}
+
+.footer__column .footer__address {
+    width: 371px;
+    color: #6a6e78;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    opacity: 0.75;
+    margin-top: 24px;
+}
+
+.footer__heading--second {
+    margin-top: 48px;
+}
+
+.subscribe-form {
+    margin-top: 24px;
+}
+
+.subscribe-form__input {
+    width: 270px;
+    height: 52px;
+    border-radius: 6px;
+    border: 1px solid #8e919a;
+    padding: 12px;
+}
+
+.subscribe-form__input::placeholder {
+    color: #8e919a;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    opacity: 0.7;
+}
+
+.subscribe-form__submit {
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    width: 113px;
+    height: 52px;
+    border-radius: 6px;
+    background: #7264d6;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+}
+
+.footer__inner .footer__row--second {
+    margin-top: 54px;
+    justify-content: flex-start;
+}
+
+.footer__row--second .email-address,
+.footer__row--second .phone-number {
+    color: #6a6e78;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.67;
+    text-decoration-line: underline;
+}
+
+.footer__row--second .phone-number {
+    margin-left: 100px;
+}
+
+.copyright {
+    padding: 28px 0;
+    background: #7264d6;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    margin-top: 28px;
+}
