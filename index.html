@@ -92,6 +92,12 @@
 
         <!-- Style Css -->
         <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- Animation -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
     </head>
     <body>
         <!-- Header -->
@@ -109,16 +115,20 @@
                     <nav class="navbar">
                         <ul class="navbar__list">
                             <li class="navbar__item">
-                                <a href="#!" class="navbar__link">Home</a>
+                                <a href="#" class="navbar__link">Home</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#!" class="navbar__link">Products</a>
+                                <a href="#product" class="navbar__link">
+                                    Products
+                                </a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#!" class="navbar__link">Features</a>
+                                <a href="#feature" class="navbar__link">
+                                    Features
+                                </a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#!" class="navbar__link">Blog</a>
+                                <a href="#blog" class="navbar__link">Blog</a>
                             </li>
                         </ul>
                     </nav>
@@ -319,7 +329,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="hero__deposite">
+                        <div
+                            class="hero__deposite animate__animated animate__flash"
+                        >
                             <div class="deposite__icon">
                                 <img
                                     src="./assets/image/icon/deposite.svg"
@@ -329,11 +341,15 @@
                             <span class="deposite__name">Deposite</span>
                             <span class="deposite__money">$32000</span>
                         </div>
-                        <div class="hero__interest">
+                        <div
+                            class="hero__interest animate__animated animate__shakeX"
+                        >
                             <div class="interest__percent">0%</div>
                             <span>Interest</span>
                         </div>
-                        <div class="hero__fund">
+                        <div
+                            class="hero__fund animate__animated animate__shakeY"
+                        >
                             <div class="fund__icon">
                                 <img
                                     src="./assets/image/icon/secured-fund.svg"
@@ -352,7 +368,7 @@
 
         <main>
             <!-- How it work -->
-            <section class="working">
+            <section id="product" class="working">
                 <div class="container">
                     <div class="working__inner">
                         <div class="working__image">
@@ -430,7 +446,7 @@
             </section>
 
             <!-- Feature 1 -->
-            <section class="feature">
+            <section id="feature" class="feature">
                 <div class="container">
                     <div class="feature__inner">
                         <!-- Feature content -->
@@ -729,7 +745,7 @@
             </section>
 
             <!-- Blog -->
-            <section class="blog">
+            <section id="blog" class="blog">
                 <div class="container">
                     <div class="blog__inner">
                         <!-- Blog header -->
@@ -1001,4 +1017,5 @@
             <div class="copyright">© 2020 Ligft Media All rights reserved.</div>
         </footer>
     </body>
+    <script src="./assets/javascript/javascript.js"></script>
 </html>

@@ -15,6 +15,11 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 /* Common */
 h1,
 h2,
@@ -57,6 +62,11 @@ a {
     line-height: var(--height);
     border-radius: 99px;
     background: #212832;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    opacity: 0.8;
 }
 
 .section__heading {
@@ -97,7 +107,10 @@ a {
 
 /* Header */
 .header {
-    padding: 42px 0;
+    padding: 42px 0 12px;
+    /* position: sticky;
+    z-index: 2;
+    top: -30px; */
 }
 
 .header__inner {
@@ -166,7 +179,7 @@ a {
 
 /* Hero */
 .hero {
-    margin-top: 34px;
+    margin-top: 64px;
 }
 
 .hero__inner {
@@ -239,6 +252,7 @@ a {
     border: none;
     outline: none;
     right: 8px;
+    cursor: pointer;
 }
 
 .hero__content .commit {
